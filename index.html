@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/app.js" defer></script>
+    <title>App Meteo</title>
+</head>
+
+<body>
+    <div class="w-background">
+    </div>
+    <div class="container">
+        <div class="container-title">
+            <h3>La Météo du Jour</h3>
+            <button id="changer">Changer de ville</button>
+        </div>
+        <div class="container-body">
+            <h1 class="w-opacity"><span id="temperature-label"></span><span>°C</span></h1>
+            <h4 class="w-opacity delay"><img src="img/icons/map-pin-line.svg" alt="map"><span id="ville"></span></h4>
+        </div>
+        <div class="container-footer">
+            <div class="footer-card">
+                <img src="img/icons/temp.svg" alt="">
+                <div class="w-opacity">
+                    <h5><span id="feels"></span><span>°C</span></h5>
+                    <h5>Préssenties</h5>
+                </div>
+            </div>
+            <div class="footer-card">
+                <img src="img/icons/humi.svg" alt="">
+                <div class="w-opacity">
+                    <h5><span id="humi"></span><span>%</span></h5>
+                    <h5>Humidité</h5>
+                </div>
+            </div>
+            <div class="footer-card">
+                <img src="img/icons/wind.svg" alt="">
+                <div class="w-opacity">
+                    <h5><span id="wind"></span><span>Km/h</span></h5>
+                    <h5>Vent</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <aside id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="false" aria-labelledby="modal-title">
+        <div class="modal-wrapper">
+            <div class="modal-illus">
+                <div class="modal-header">
+                    <h2 class="modal-title">Quelle ville souhaitez vous voir ?</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="textfield-container">
+                        <img src="./img/icons/pin.svg" alt="" class="field-icon">
+                        <input type="text" class="textfield" id="city" placeholder="ex:Douala" autofocus>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" id="accept">Voir la metéo de cette ville</button>
+                    <button class="btn btn-secondary" id="close">Annuler</button>
+                </div>
+            </div>
+        </div>
+    </aside>
+</body>
+
+</html>
