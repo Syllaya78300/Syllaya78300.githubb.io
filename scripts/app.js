@@ -1,4 +1,4 @@
-// Key  : dac8cd8abf90c2565292a581ea165b9b
+// Key  : e51b232f0c6b9d006d797310f4bc5ea3
 const DEFAULT_CITY = "SEDHIOU"
 let tabDelay = document.querySelectorAll('.w-opacity')
 
@@ -40,7 +40,7 @@ if (localStorage.getItem("ville")) {
           position.coords.latitude +
           "&lon=" +
           position.coords.longitude +
-          "&appid=dac8cd8abf90c2565292a581ea165b9b&units=metric";
+          "&appid=e51b232f0c6b9d006d797310f4bc5ea3&units=metric";
 
         let requete = new XMLHttpRequest(); // Nous créons un objet qui nous permettra de faire des requêtes
         requete.open("GET", url); // Nous récupérons juste des données
@@ -99,7 +99,7 @@ function recevoirTemperature(ville) {
   const url =
     "https://api.openweathermap.org/data/2.5/weather?q=" +
     ville +
-    "&appid=dac8cd8abf90c2565292a581ea165b9b&units=metric";
+    "&appid=e51b232f0c6b9d006d797310f4bc5ea3&units=metric";
 
   let requete = new XMLHttpRequest(); // Nous créons un objet qui nous permettra de faire des requêtes
   requete.open("GET", url); // Nous récupérons juste des données
