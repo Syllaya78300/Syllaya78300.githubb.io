@@ -1,5 +1,5 @@
 // Key  : dac8cd8abf90c2565292a581ea165b9b
-const DEFAULT_CITY = "DOUALA"
+const DEFAULT_CITY = "SILAYA SILAKOUNDA"
 let tabDelay = document.querySelectorAll('.w-opacity')
 
 function background(temperature) {
